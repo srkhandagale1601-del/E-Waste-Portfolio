@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="Academic e-waste portfolio illustration">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1">
+      <stop offset="0%" stop-color="#0d1712"/>
+      <stop offset="100%" stop-color="#1d2e26"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" x2="1">
+      <stop offset="0%" stop-color="#7dd98d"/>
+      <stop offset="100%" stop-color="#d7f8d9"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#bg)"/>
+  <g opacity="0.18" stroke="#7dd98d" fill="none">
+    <circle cx="170" cy="140" r="140"/>
+    <circle cx="980" cy="640" r="180"/>
+  </g>
+  <g fill="none" stroke="url(#accent)" stroke-width="4">
+    <path d="M170 570 C 260 420, 610 320, 760 500 S 1030 620, 1090 400"/>
+    <path d="M190 440 L 290 340 L 430 420 L 510 260 L 700 340 L 820 208 L 1030 280" opacity="0.8"/>
+  </g>
+  <g fill="#edf5ee" font-family="Segoe UI, Arial, sans-serif" font-weight="700">
+    <text x="120" y="120" font-size="42" letter-spacing="6" fill="#7dd98d">E-WASTE</text>
+  </g>
+  <g fill="#edf5ee" font-family="Segoe UI, Arial, sans-serif">
+    <text x="120" y="690" font-size="58" font-weight="700">Academic Portfolio</text>
+    <text x="120" y="740" font-size="28" fill="#b7cdbd">Sustainability • Technology • Research</text>
+  </g>
+</svg>

@@ -1,0 +1,80 @@
+export const subjects = [
+  {
+    id: '01',
+    slug: 'e-waste-fundamentals',
+    title: 'E-Waste Fundamentals',
+    description: 'Understanding electronic waste, its sources, categories, and lifecycle across consumption and disposal systems.',
+    icon: '♻',
+    overview: 'This subject introduces the concept of electronic waste as a growing environmental and social challenge. It focuses on how products are designed, consumed, discarded, and eventually processed, with attention to the importance of systems thinking and responsible material use.',
+    concepts: ['Definition and classification of electronic waste', 'Sources and drivers of e-waste generation', 'Product lifecycle from manufacturing to disposal'],
+    outcomes: ['Identify the key categories of e-waste and their origins', 'Connect product use with disposal practices', 'Describe the lifecycle stages of electronic devices'],
+    resources: ['Class notes and lecture material', 'Case studies on smartphone, laptop, and appliance waste', 'Guides on e-waste awareness and material tracking'],
+    relatedAssignments: ['e-waste-collection-analysis'],
+    image: '/images/subjects/e-waste-fundamentals.svg'
+  },
+  {
+    id: '02',
+    slug: 'e-waste-management',
+    title: 'E-Waste Management',
+    description: 'Collection, segregation, transportation, treatment, and responsible disposal strategies for electronic waste.',
+    icon: '↺',
+    overview: 'E-waste management covers the practical systems required to handle discarded electronics safely and efficiently. The focus is on reducing environmental harm through organized collection, thoughtful segregation, and responsible handling practices.',
+    concepts: ['Collection systems and public participation', 'Segregation and storage methods', 'Treatment and safe disposal pathways'],
+    outcomes: ['Explain how e-waste is collected and sorted', 'Recognize the value of safe handling and storage', 'Understand the role of treatment facilities in reducing risks'],
+    resources: ['Waste flow diagrams', 'Disposal process documentation', 'Institutional examples of municipal e-waste systems'],
+    relatedAssignments: ['e-waste-collection-analysis'],
+    image: '/images/subjects/e-waste-management.svg'
+  },
+  {
+    id: '03',
+    slug: 'environmental-impact',
+    title: 'Environmental Impact',
+    description: 'Exploring how electronic waste affects ecosystems, soil, water, air, and public health.',
+    icon: '◌',
+    overview: 'This topic connects e-waste with environmental stressors such as contamination, resource depletion, and air pollution. It highlights the need to assess both visible and hidden impacts of improper disposal.',
+    concepts: ['Soil and water contamination', 'Air pollution and toxic emissions', 'Resource depletion and ecosystem disruption'],
+    outcomes: ['Discuss how hazardous substances affect natural systems', 'Explain why informal handling can be harmful', 'Relate e-waste practices to broader environmental outcomes'],
+    resources: ['Environmental impact summaries', 'Research reprints on hazardous substances', 'Field examples from electronics recovery efforts'],
+    relatedAssignments: ['environmental-impact-study'],
+    image: '/images/subjects/environmental-impact.svg'
+  },
+  {
+    id: '04',
+    slug: 'recycling-recovery',
+    title: 'Recycling & Recovery',
+    description: 'Recovery of valuable materials and the role of recycling in a circular economy.',
+    icon: '↻',
+    overview: 'Recycling and recovery practices examine how materials can be extracted and reused from discarded electronics. This subject helps connect ecological responsibility with technological efficiency and material stewardship.',
+    concepts: ['Material recovery and resource reuse', 'Recycling process design', 'Circular economy principles'],
+    outcomes: ['Identify recoverable materials from electronic waste', 'Understand the logic of closed-loop resource management', 'Describe the role of recycling in sustainability'],
+    resources: ['Recovered materials flow diagrams', 'Circular economy case notes', 'Recovery process summaries'],
+    relatedAssignments: [],
+    image: '/images/subjects/recycling-recovery.svg'
+  },
+  {
+    id: '05',
+    slug: 'sustainable-technology',
+    title: 'Sustainable Technology',
+    description: 'Connecting technology choices with resource efficiency, product longevity, and environmental responsibility.',
+    icon: '⌁',
+    overview: 'Sustainable technology explores how digital systems can be designed and used in ways that reduce waste and encourage long-term responsibility. It considers how technology can support environmental goals without sacrificing usability or innovation.',
+    concepts: ['Responsible consumption patterns', 'Product longevity and repairability', 'Sustainable design and digital stewardship'],
+    outcomes: ['Assess how product lifespan affects sustainability', 'Recognize design decisions that reduce waste', 'Connect technology use with environmental thinking'],
+    resources: ['Sustainable design references', 'LCA and product lifecycle notes', 'Reflection on responsible technology use'],
+    relatedAssignments: [],
+    image: '/images/subjects/sustainable-technology.svg'
+  },
+  {
+    id: '06',
+    slug: 'policies-responsibility',
+    title: 'E-Waste Policies & Responsibility',
+    description: 'Examining policy, producer responsibility, consumer behavior, and the ethics of disposal.',
+    icon: '◎',
+    overview: 'This subject discusses the institutional and societal drivers behind effective e-waste practices. It includes policy frameworks, producer accountability, and the importance of awareness and responsible behavior at every level.',
+    concepts: ['Policy frameworks and governance', 'Producer responsibility and extended producer responsibility', 'Consumer awareness and ethical disposal'],
+    outcomes: ['Explain how regulation shapes disposal systems', 'Understand shared responsibility across stakeholders', 'Evaluate public action as part of environmental stewardship'],
+    resources: ['Policy summaries', 'Responsibility frameworks', 'Awareness campaign examples'],
+    relatedAssignments: [],
+    image: '/images/subjects/e-waste-policies-responsibility.svg'
+  }
+];
