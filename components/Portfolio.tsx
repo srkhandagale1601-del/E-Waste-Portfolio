@@ -12,13 +12,12 @@ import CustomCursor from './CustomCursor';
 import MagneticButton from './MagneticButton';
 import Navigation from './Navigation';
 import Reveal from './Reveal';
-import ScrollProgress from './ScrollProgress';
+import Image from 'next/image';
 
 export default function Portfolio() {
   return (
     <>
       <Navigation />
-      <ScrollProgress />
       <CustomCursor />
 
       <main className="page-shell">
@@ -70,20 +69,27 @@ export default function Portfolio() {
               </motion.div>
             </div>
 
-            <motion.div className="hero-visual" initial={{ opacity: 0, scale: 0.96, filter: 'blur(14px)' }} animate={{ opacity: 1, scale: 1, filter: 'blur(0px)' }} transition={{ duration: 0.9, delay: 0.65 }}>
+            <motion.div
+              className="hero-visual"
+              initial={{ opacity: 0, scale: 0.96, filter: 'blur(14px)' }}
+              animate={{ opacity: 1, scale: 1, filter: 'blur(0px)' }}
+              transition={{
+                duration: 0.9,
+                delay: 0.65,
+              }}
+            >
               <div className="visual-shell">
-                <div className="visual-ring visual-ring--one" />
-                <div className="visual-ring visual-ring--two" />
-                <div className="visual-grid" />
-                <div className="visual-node visual-node--one" />
-                <div className="visual-node visual-node--two" />
-                <div className="visual-node visual-node--three" />
-                <div className="visual-label">
-                  <span>Electronic waste</span>
-                  <strong>Resource recovery</strong>
-                </div>
+                <Image
+                  src="/images/e-waste-hero.png"
+                  alt="E-waste management and resource recovery"
+                  fill
+                  priority
+                  sizes="(max-width: 900px) 100vw, 50vw"
+                  className="hero-ewaste-image"
+                />
               </div>
-            </motion.div>
+        </motion.div>
+
           </div>
         </section>
 
@@ -234,12 +240,11 @@ export default function Portfolio() {
                       <div className="assignment-card__main">
                         <h3>{assignment.title}</h3>
                         <div className="assignment-card__meta">
-                          <span>{assignment.subject}</span>
                           <span>{assignment.date}</span>
                         </div>
                         <p>{assignment.description}</p>
                       </div>
-                      <div className="assignment-card__status">{assignment.status}</div>
+                      <div className="assignment-card__status"></div>
                       <div className="assignment-card__action">
                         VIEW ASSIGNMENT <ArrowRight size={14} />
                       </div>
