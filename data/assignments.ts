@@ -9,6 +9,7 @@ export type Assignment = {
     alt: string;
     caption?: string;
   }>;
+  link?:string;
   learningOutcome: string;
 };
 
@@ -42,8 +43,35 @@ export const assignments: Assignment[] = [
     description: 'This carbon footprint assessment presents an overview of the household’s annual greenhouse gas emissions and compares them with the average emissions in India and worldwide. The assessment shows a total annual footprint of 14.06 tonnes of CO₂, with food contributing the largest share at 56%, followed by transportation at 26% and electricity at 18%. The activity helps identify major sources of household emissions and highlights the importance of making sustainable choices such as reducing energy consumption, adopting cleaner transportation, minimizing food waste, and choosing environmentally responsible lifestyles.',
     images: [
       { src: '/images/assignments/assignment-03.png', alt: 'Carbon-FootPrint', caption: 'Carbon-FootPrint' },
+      {src: '/images/assignments/assignment-03-2.jpeg', alt:'Carbon-FootPrint', caption: 'Carbon Footprint Assessment Report'}
     ],
-    learningOutcome: 'I learned how different household activities contribute to carbon emissions and how a carbon footprint can be measured and compared with national and global averages. From this assessment, I understood that food, transportation, and electricity consumption are major contributors to my household’s emissions. This activity increased my awareness of the environmental impact of my daily choices and encouraged me to reduce energy use, minimize waste, use sustainable transportation, and adopt more environmentally friendly practices.'  }
+    learningOutcome: 'I learned how different household activities contribute to carbon emissions and how a carbon footprint can be measured and compared with national and global averages. From this assessment, I understood that food, transportation, and electricity consumption are major contributors to my household’s emissions. This activity increased my awareness of the environmental impact of my daily choices and encouraged me to reduce energy use, minimize waste, use sustainable transportation, and adopt more environmentally friendly practices.'  
+  },{
+    id:'04',
+    slug: 'e-waste-data-analysis',
+    title:'E-Waste Data Analysis',
+    date:'9/09/2026',
+    description:'This assessment focuses on analyzing e-waste generation and distribution across India and presenting the findings through an interactive dashboard. The dashboard provides a clear overview of e-waste trends, regional distribution, and key insights, making it easier to understand the scale and impact of e-waste across the country.',
+    images: [
+      {
+        src: '/images/assignments/assignment-04.png',
+        alt: 'E-Waste Dashboard Overview',
+        caption: 'E-Waste Dashboard Overview'
+      },
+      {
+        src: '/images/assignments/assignment-04-chart.png',
+        alt: 'E-Waste Distribution Chart',
+        caption: 'E-Waste Distribution Across India'
+      },
+      {
+        src: '/images/assignments/assignment-04-hotspot.png',
+        alt: 'E-Waste Distribution Hotspot',
+        caption: 'E-Waste Distribution Across India'
+      }
+    ],
+    link: 'https://india-e-waste-dashboard.streamlit.app',
+    learningOutcome:'I learned how to analyze and interpret e-waste data and present the findings in a clear and meaningful way using a dashboard. This assessment helped me understand the distribution and scale of e-waste across different regions of India. I also learned how data visualization can be used to identify trends, compare regions, and communicate complex information effectively.'
+  }
 ];
 
 export function addAssignment(item: Assignment) {

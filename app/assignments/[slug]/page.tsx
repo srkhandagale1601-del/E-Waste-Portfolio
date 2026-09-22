@@ -39,6 +39,21 @@ export default async function AssignmentPage({ params }: { params: Promise<{ slu
           <ImageGallery images={assignment.images} />
         </section>
 
+        {assignment.link && (
+          <section className="detail-section compact">
+            <h2>Data Analysis</h2>
+
+            <a
+              href={assignment.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="detail-link"
+            >
+              View Data Analysis →
+            </a>
+          </section>
+        )}
+
         <section className="detail-section compact">
           <h2>Learning Outcome</h2>
           <p>{assignment.learningOutcome}</p>
